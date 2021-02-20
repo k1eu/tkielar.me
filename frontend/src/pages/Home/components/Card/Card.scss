@@ -1,0 +1,52 @@
+@import '/src/styles/variables.scss';
+
+.card-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5% 0;
+    width:250px;
+    height:300px;
+    background-color: $nord-dark;
+    border-radius: 20%;
+    padding:1em;
+}
+
+.skill-header {
+    text-align: center;
+    font-size: 2em;
+    color: $snow-nord-light;
+    font-family: 'Roboto', sans-serif;
+}
+
+.skill-desc {
+    font-size: 1.25em;
+    color: $snow-nord-dark;
+    font-family: 'Roboto', sans-serif;
+    word-wrap: break-word;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.buttons-wrapper {
+    display:flex;
+    flex-direction: column;
+    flex:1;
+    gap: 15%;
+    align-items: center;
+
+    & div {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        height:2.5em;
+        width: 15em;
+        color: white;
+        border-radius: 0.8em;
+        background-color: $nord-light;
+
+        &:hover {
+            cursor: pointer;
+            background-color: lighten($color: $nord-light, $amount: 15);
+        }
+    }
+}
